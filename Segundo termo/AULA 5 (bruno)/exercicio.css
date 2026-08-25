@@ -1,0 +1,46 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 18px;
+    margin: 18px;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 18px;
+    text-align: center;   
+}
+
+nav a {
+    background-color: rgb(255, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    background-color: cadetblue;
+    color:rgba(red, green, blue, alpha);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+section {
+    background-color: rgb(0, 191, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 38px;
+}
+
+footer {
+    margin-top: 44px;
+    text-align: center;
+}

@@ -1,7 +1,10 @@
-let contador = 1
+const produto = {
+    nome: "Teclado Mecânico",
+    preco: 150.00,
+    estoque: 25,
+    emOferta: true
+};
 
-while(contador <=100) {
-    console.log(`Contagem: ${contador}`);
-    contador+=5;
-}
-console.log("Fim da contagem");
+console.log(`Produto: ${produto.nome}`);
+console.log(`Preço: R$ ${produto.preco.toFixed(2)}`);
+console.log(`Produto: ${produto.nome} | ${produto.preco} | ${produto.estoque} | ${produto.emOferta}`);

@@ -54,7 +54,7 @@ VALUES
 -- UPDATE:
 -- SELECT final:
 
-INSERT INTO
+INSERT INTO 
 
 -- 8. Altere cidade e telefone de outro cliente em um único UPDATE.
 

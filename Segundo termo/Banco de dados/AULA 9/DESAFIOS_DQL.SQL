@@ -42,9 +42,7 @@ WHERE CIDADE IN ('LIMEIRA', 'AMERICANA');
 
 -- 8. Localize os produtos cujo nome contém a palavra “Café”.
 
-SELECT * 
-FROM PRODUTO
-WHERE NOME LIKE '%Café%';
+
 
 -- 9. Liste os clientes que não informaram telefone.
 

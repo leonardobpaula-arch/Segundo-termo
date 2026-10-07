@@ -1,0 +1,15 @@
+.equipe {
+    display: flex;
+    gap: 30px;
+}
+
+.equipe2 {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between 
+    /* flex-start 
+    center 
+    flex-end 
+    
+    space-evenly ; */
+}

@@ -1,0 +1,24 @@
+.class1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 32px;
+}
+.class2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 32px;
+}
+.class3 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.class4 {
+    display: grid;
+        grid-template-columns: repeat(4, 1fr);
+}

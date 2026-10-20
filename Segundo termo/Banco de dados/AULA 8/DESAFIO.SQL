@@ -54,37 +54,87 @@ VALUES
 -- UPDATE:
 -- SELECT final:
 
+SELECT *
+FROM clientes
+WHERE id_cliente = 1;
+
+UPDATE clientes
+SET telefone = '11987654321'
+WHERE id_cliente = 1;
+
+SELECT *
+FROM clientes
+WHERE id_cliente = 1;
 
 
 -- 8. Altere cidade e telefone de outro cliente em um único UPDATE.
 
+UPDATE clientes
+SET cidade = 'Curitiba',
+    telefone = '41999999999'
+WHERE id_cliente = 2;
 
 -- 9. Aumente em 8% o preço dos produtos da categoria 'Especiais da Casa'.
+
+UPDATE produtos
+SET preco = preco * 1.08
+WHERE categoria = 'Especiais da Casa';
 
 
 -- 10. Altere o status do pedido criado para 'PREPARANDO'.
 
+UPDATE pedidos
+SET status = 'PREPARANDO'
+WHERE id_pedido = 1;
 
 -- 11. Atualize valor_total do pedido de acordo com os itens cadastrados.
 --     Você pode calcular previamente com SELECT SUM(quantidade * preco_unitario).
 
+UPDATE pedidos
+SET valor_total = (
+    SELECT COALESCE(SUM(quantidade * preco_unitario), 0)
+    FROM itens_pedido
+    WHERE itens_pedido.id_pedido = pedidos.id_pedido
+)
+WHERE id_pedido = 1;
 
 -- 12. Escolha um dos produtos criados e faça uma exclusão lógica (ativo = FALSE).
 
+UPDATE produtos
+SET ativo = FALSE
+WHERE id_produto = 1;
 
 -- PARTE C - DELETE
 
 -- 13. Crie um cliente de teste sem pedidos.
 --     Depois localize e exclua apenas esse cliente.
 
+INSERT INTO clientes (nome, cidade, telefone)
+VALUES ('Cliente Teste Exclusao', 'Curitiba', '41988887777');
+
+SELECT *
+FROM clientes
+WHERE nome = 'Cliente Teste Exclusao';
+
+DELETE FROM clientes
+WHERE nome = 'Cliente Teste Exclusao'
+  AND telefone = '41988887777';
 
 -- 14. Tente excluir um cliente da base original que possua pedidos.
 --     Deixe o DELETE comentado após o teste e descreva o erro abaixo.
 -- Resultado observado:
 
+-- DELETE FROM clientes
+-- WHERE id_cliente = 1;
+
+-- Resultado:
+-- A exclusão foi bloqueada porque o cliente possui pedidos associados.
+-- O banco impediu a operação devido à restrição de chave estrangeira.
+
 
 -- 15. Explique em comentário por que a FK bloqueou a exclusão.
 -- Resposta:
+
 
 
 -- 16. Crie uma categoria temporária chamada 'Excluir Depois' e remova-a.

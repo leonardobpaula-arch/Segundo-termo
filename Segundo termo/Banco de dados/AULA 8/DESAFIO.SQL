@@ -135,10 +135,16 @@ WHERE nome = 'Cliente Teste Exclusao'
 -- 15. Explique em comentário por que a FK bloqueou a exclusão.
 -- Resposta:
 
-
+A chave estrangeira impediu a exclusão porque existem registros
+em outra tabela que referenciam o registro que seria excluído.
 
 -- 16. Crie uma categoria temporária chamada 'Excluir Depois' e remova-a.
 
+INSERT INTO categorias (nome)
+VALUES ('Excluir Depois');
+
+DELETE FROM categorias
+WHERE nome = 'Excluir Depois';
 
 -- PARTE D - INTEGRIDADE E ERROS CONTROLADOS
 -- Execute uma tentativa por vez. Depois deixe o comando problemático comentado.
@@ -146,6 +152,11 @@ WHERE nome = 'Cliente Teste Exclusao'
 -- 17. Tente inserir um produto com id_categoria = 9999.
 -- Qual restrição impediu a operação?
 
+INSERT INTO produtos (nome, preco, id_categoria)
+VALUES ('Produto Teste', 10.00, 9999);
+
+A chave estrangeira (FOREIGN KEY), pois a categoria 9999
+não existe na tabela categorias.
 
 -- 18. Tente cadastrar um cliente usando 'ana@email.com'.
 -- Qual restrição impediu a operação?
@@ -177,6 +188,8 @@ WHERE nome = 'Cliente Teste Exclusao'
 --     Depois consulte os registros persistidos.
 
 
+
 -- DESAFIO EXTRA
 -- 26. Escolha uma situação realista do SmartCoffee que exija INSERT + UPDATE
 --     ou UPDATE + DELETE lógico. Descreva a regra de negócio e implemente.
+

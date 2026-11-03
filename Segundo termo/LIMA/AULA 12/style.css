@@ -1,6 +1,5 @@
 /* ROOT: Podemos guardar nossas cores e informações gerais em um único lugar
  */
-
 :root {
     /* Paleta de Cores */
     --creme: #F3E6D7;
@@ -163,5 +162,3 @@ h3 {
     transform: translateY(-4px);
     box-shadow: 0 12px 30px rgba(43,23,13,0.12);
 }
-
-

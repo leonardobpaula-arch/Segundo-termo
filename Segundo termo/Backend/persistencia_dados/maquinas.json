@@ -1,0 +1,20 @@
+[
+  {
+    "id": 101,
+    "nome": "torno revolver",
+    "setor": "usinagem",
+    "opercional": false
+  },
+  {
+    "id": 102,
+    "nome": "furadeira de bancada",
+    "setor": "manutençao",
+    "operacional": false
+  },
+  {
+    "id": 103,
+    "nome": "prensa hidraulica 40T",
+    "setor": "estamparia",
+    "operacional": true
+  }
+]

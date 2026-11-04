@@ -9,7 +9,7 @@ scroll-behavior: smooth;
 }
 
 body {
-background-color: #0b0b19;
+background-color: #000;
 color: #ffffff;
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,12 +20,12 @@ color: inherit;
 }
 
 header {
-background-color: #101020;
+background-color: #000;
 padding: 22px 8%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-border-bottom: 1px solid #25253b;
+border-bottom: 1px solid #000;
 }
 
 .logo {
@@ -58,7 +58,7 @@ padding: 55px 7%;
 }
 
 .subtitulo {
-color: #24d9f5;
+color: #ffffff;
 font-size: 10px;
 letter-spacing: 3px;
 text-transform: uppercase;
@@ -66,7 +66,6 @@ margin-bottom: 12px;
 }
 
 h1 {
-font-size: clamp(35px, 5vw, 58px);
 line-height: 1.05;
 text-transform: uppercase;
 max-width: 550px;
@@ -85,7 +84,7 @@ align-items: center;
 justify-content: space-between;
 gap: 35px;
 min-height: 350px;
-background-color: #15152a;
+background-color: #000;
 }
 
 .hero-texto {
@@ -100,7 +99,7 @@ margin: 20px 0;
 }
 
 .card {
-background-color: #19192d;
+background-color: #000;
 padding: 12px;
 border-radius: 10px;
 transition: 0.3s;
@@ -108,12 +107,16 @@ transition: 0.3s;
 
 .card:hover {
 transform: translateY(-5px);
-background-color: #252540;
+background-color: #000;
 }
 
 .card img {
-width: 100%;
+width: 80%;
 height: 160px;
 object-fit: cover;
 border-radius: 7px;
+}
+
+.card h3 {
+font-size: 15px;
 }

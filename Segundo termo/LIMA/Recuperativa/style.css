@@ -1,0 +1,30 @@
+.corpo {
+    border: 2px solid #0f0235;
+}
+
+.inicio {
+    background-color: rgb(4, 14, 104);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+.navegacao {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+}
+
+.navegacao a {
+    color: #ffffff;
+}
+
+.conteudo {
+    background-color: rgb(178, 232, 253);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+

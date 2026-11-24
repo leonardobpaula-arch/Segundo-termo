@@ -4,38 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+
+<title>TECHFEST - Festival de Tecnologia</title>
+
+
 </head>
-<body class="corpo">
+<body>
 
-    <header class="inicio">
-        <a href="#titulo"><h1>TECHFEST</h1></a>
+<div class="container">
 
-        <nav>
-            <ul class="navegacao">
-                <li><a href="#início">início</a></li>
-                <li><a href="#atrações">atrações</a></li>
-                <li><a href="#programação">programação</a></li>
-                <li><a href="#sobre">sobre</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="conteudo">
-            <article class="conteudo">
-                <h1>TECNOLOGIA QUE TRANSFORMA</h1>
-                Prepare-se para uma experiência incrível onde a inovação, a criatividade e a tecnologia se encontram!
-                O Festival de Tecnologia é um evento dedicado a explorar o mundo tecnológico, descobrir novas ideias e despertar talentos. Venha conhecer projetos incríveis, participar de jogos e competições, aprender sobre programação, robótica e muito mais!
-            </article>
+<header>
 
-            <figure>
-                <img src="" alt="Imagem ilustrativa">
-                <figcaption>Imagem criada por IA</figcaption>
-            </figure>
+    <strong>TECHFEST</strong>
 
-        </section>
-    </main>
+    <nav>
+
+        <a href="#inicio">INÍCIO</a> |
+        <a href="#atracoes">ATRAÇÕES</a> |
+        <a href="#programacao">PROGRAMAÇÃO</a> |
+        <a href="#sobre">SOBRE</a>
+
+    </nav>
+
+</header>
+
+<section class="hero" id="inicio">
+
+    <h2>TECNOLOGIA QUE TRANSFORMA</h2>
+    <p>Venha conhecer as novidades do mundo da tecnologia!</p>
+    <p>Inovação, criatividade e conhecimento em um só lugar.</p>
+
+    <button onclick="document.getElementById('atracoes').scrollIntoView({behavior:'smooth'})">
+        Explorar atrações
+    </button>
+
+</section>
+
+<section class="cards" id="atracoes">
+
+    <div class="card">
+        <div class="imagem">🤖</div>
+
+        <h3>Robótica</h3>
+        <p>Conheça o mundo dos robôs.</p>
+
+    </div>
+
+    <div class="card">
+        <div class="imagem">💻</div>
+
+        <h3>Programação</h3>
+        <p>Aprenda a criar programas.</p>
+
+    </div>
+
+    <div class="card">
+        <div class="imagem">🎮</div>
+
+        <h3>Games</h3>
+        <p>Descubra o universo dos jogos.</p>
+
+    </div>
+
+    <div class="card">
+        <div class="imagem">🚀</div>
+
+        <h3>Inovação</h3>
+        <p>Novas ideias para o futuro.</p>
+
+    </div>
+
+    <div class="card">
+        <div class="imagem">🧠</div>
+
+        <h3>Inteligência Artificial</h3>
+        <p>Explore a inteligência artificial.</p>
+        
+    </div>
+
+    <div class="card">
+        <div class="imagem">🔬</div>
+
+        <h3>Ciência</h3>
+        <p>Experiências e descobertas.</p>
+
+    </div>
+
+</section>
+
+<section class="informacoes">
+
+    <div class="bloco" id="programacao">
+
+        <h3>PROGRAMAÇÃO</h3>
+        <p>09:00 - Abertura do evento</p>
+        <p>11:20 - Exposição de robótica</p>
+        <p>14:30 - Oficina de programação</p>
+        <p>18:50 - Encerramento</p>
+
+    </div>
+
+    <div class="bloco" id="sobre">
+
+        <h3>SOBRE O EVENTO</h3>
+        <p>O TECHFEST é um festival de tecnologia dedicado à inovação, criatividade e aprendizado. Venha participar dessa experiência</p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>TECHFEST | Contato | Créditos</p>
+    <p>© 2026 - Todos os direitos reservados</p>
+
+</footer>
+
+</div>
 
 </body>
 </html>
